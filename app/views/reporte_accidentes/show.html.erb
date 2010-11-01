@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+<p>
+  <b>Twitter:</b>
+  <%= @reporte_accidente.twitter_id %>
+</p>
+
+<p>
+  <b>Texto:</b>
+  <%= @reporte_accidente.texto %>
+</p>
+
+<p>
+  <b>Severidad:</b>
+  <%= @reporte_accidente.severidad %>
+</p>
+
+<p>
+  <b>Lat:</b>
+  <%= @reporte_accidente.lat %>
+</p>
+
+<p>
+  <b>Long:</b>
+  <%= @reporte_accidente.lng %>
+</p>
+
+<p>
+  <b>Fechahora:</b>
+  <%= @reporte_accidente.fechahora %>
+</p>
+
+<%= draw_map_of @reporte_accidente %>
+
+<%= link_to 'Edit', edit_reporte_accidente_path(@reporte_accidente) %> |
+<%= link_to 'Back', reporte_accidentes_path %>

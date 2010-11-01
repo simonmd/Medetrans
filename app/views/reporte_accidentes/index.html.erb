@@ -1,0 +1,33 @@
+<h1>Listing reporte_accidentes</h1>
+
+<table>
+  <tr>
+    <th>Twitter</th>
+    <th>Texto</th>
+    <th>Severidad</th>
+    <th>Lat</th>
+    <th>Lng</th>
+    <th>Fechahora</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @reporte_accidentes.each do |reporte_accidente| %>
+  <tr>
+    <td><%= reporte_accidente.twitter_id %></td>
+    <td><%= reporte_accidente.texto %></td>
+    <td><%= reporte_accidente.severidad %></td>
+    <td><%= reporte_accidente.lat %></td>
+    <td><%= reporte_accidente.lng %></td>
+    <td><%= reporte_accidente.fechahora %></td>
+    <td><%= link_to 'Show', reporte_accidente %></td>
+    <td><%= link_to 'Edit', edit_reporte_accidente_path(reporte_accidente) %></td>
+    <td><%= link_to 'Destroy', reporte_accidente, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Reporte accidente', new_reporte_accidente_path %>

@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  twitter_id: MyString
+  texto: MyString
+  severidad: MyString
+  lat: 1.5
+  long: 1.5
+  fechahora: 2010-10-30 18:56:57
+
+two:
+  twitter_id: MyString
+  texto: MyString
+  severidad: MyString
+  lat: 1.5
+  long: 1.5
+  fechahora: 2010-10-30 18:56:57
