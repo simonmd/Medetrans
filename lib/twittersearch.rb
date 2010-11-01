@@ -16,7 +16,7 @@ class TwitterSearch
 
   def save_tweets(tweet_array)
      tweet_array.each do |r|
-        @reporte_accidente = ReporteAccidente.create(:twitter_id => r["twitter_id"], :texto => r["texto"])
+        @reporte_accidente = ReporteAccidente.create(:twitter_id => r["twitter_id"], :texto => r["texto"], :fechahora => r["reportado"])
       end
   end
 end
