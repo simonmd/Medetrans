@@ -10,3 +10,4 @@
 * Spinners de indicacion que esta trabajando y en que
 * Ajax para mostrar cuantos hay nuevos
 * Deamonizar? Delayed job? Crons? Desacoplar de las paginas el fetching
+* Campo de busqueda para accidentes cercanos segun mi ubicacion actual
